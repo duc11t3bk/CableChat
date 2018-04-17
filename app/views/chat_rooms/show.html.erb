@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <%= link_to "List Rooms", chat_rooms_path, class: "btn btn-primary" %>
+      </div>
+      <div class="col-lg-6">This is chat room <%= @chat_room.title %></div>
+    </div>
+    <div class="row">
+      <div class="messages-box col-lg-12" id="messages">
+      </div>
+    </div>
+    <div class="row">
+      <textarea class="messages-send col-lg-12" rows="4">
+      </textarea>
+
+      <div class="text-right col-lg-12">
+        <button class="btn btn-primary" id="submit">Enter</button>
+      </div>
+    </div>
+
+  <%= content_for :specific_page_js do %>
+    <script type="text/javascript">
+        <%= render "chat_room.js" %>
+    </script>
+  <% end %>
+</div>

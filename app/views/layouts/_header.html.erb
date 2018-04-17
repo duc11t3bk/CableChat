@@ -1,0 +1,13 @@
+<div class="text-center" style="margin-bottom: 50px;">
+  <h1>CableChat</h1>
+</div>
+<div style="padding-right: 50px;">
+  <% if user_signed_in? %>
+    <div class="text-right">
+      User: <%= current_user.email %>
+    </div>
+    <div class="text-right">
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    </div>
+  <% end %>
+</div>
