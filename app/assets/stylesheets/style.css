@@ -1,0 +1,25 @@
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.messages-box {
+  height: 500px;
+  border-radius: 5px;
+  border-color: #666666;
+  border: 2px;
+  border-style: solid;
+  margin-top: 100px;
+}
+
+.messages-send {
+  width: 100%;
+  border-radius: 5px;
+  border-color: #666666;
+  border: 2px;
+  border-style: solid;
+  margin-top: 100px;
+}
