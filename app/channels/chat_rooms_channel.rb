@@ -8,7 +8,7 @@ class ChatRoomsChannel < ApplicationCable::Channel
   end
 
   def receive data
-    ActionCable.server.broadcast "chat_rooms_#{data["chat_room_id"]}_channel", user: current_user.email,
+    ActionCable.server.broadcast "chat_rooms_#{data["chat_room_id"]}_channel",
       message: data["message"], time_stamp: data["time_stamp"]
   end
 end
